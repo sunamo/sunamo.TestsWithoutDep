@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\sunamo\sunamo\Crypting\Data\ExternalLoginResult.cs" Link="ExternalLoginResult.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoGoPay\SunamoGoPay.csproj" />
+    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoJson\SunamoJson.csproj" />
   </ItemGroup>
+
 </Project>

@@ -49,20 +49,20 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ZATests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZATests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoZip\SunamoZip.csproj">
-      <Project>{38304f31-dcc7-42b6-84c7-8e7127cabbc9}</Project>
-      <Name>SunamoZip</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj">
       <Project>{f6f92307-b0b3-4d6c-bd9c-8b5ff5560dcf}</Project>
       <Name>sunamo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoZip\SunamoZip.csproj">
+      <Project>{38304f31-dcc7-42b6-84c7-8e7127cabbc9}</Project>
+      <Name>SunamoZip</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

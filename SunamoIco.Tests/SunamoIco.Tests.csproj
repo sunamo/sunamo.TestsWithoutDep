@@ -11,9 +11,7 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\sunamo.Tests\TestValues\TestValues.csproj" />
-    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoJson\SunamoJson.csproj" />
-    <ProjectReference Include="..\..\sunamo\shared\shared.csproj" />
+    <ProjectReference Include="..\..\sunamoWithoutDep\SunamoIco\SunamoIco.csproj" />
     <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
   </ItemGroup>
 </Project>
