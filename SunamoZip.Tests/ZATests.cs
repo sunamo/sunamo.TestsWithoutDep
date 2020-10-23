@@ -22,5 +22,15 @@ namespace SunamoZip.Tests
             //FS.CreateUpfoldersPsysicallyUnlessThere(saveTo);
             //z.CreateArchive(folder, files, saveTo);
         }
+
+        [TestMethod]
+        public void CreateArchiveTest()
+        {
+            var folder = @"d:\_Test\sunamoWithoutDepSunamoZip\SunamoZip\ToZip\";
+
+            var z = ZA.zip;
+            var files = FS.GetFiles(folder, "*.txt", SearchOption.AllDirectories);
+            z.CreateArchive(folder, files, @"d:\_Test\sunamoWithoutDepSunamoZip\1.zip");
+        }
     }
 }
