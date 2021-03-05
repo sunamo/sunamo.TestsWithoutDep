@@ -20,7 +20,7 @@ namespace SunamoYaml.Tests
             LoadDefaultPath();
 
             // Setup the input
-            var input = new StringReader(File.ReadAllText(path));
+            var input = new StringReader(FS.ReadAllText(path));
 
             // Load the stream
             var yaml = new YamlStream();
