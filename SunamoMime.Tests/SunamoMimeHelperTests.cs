@@ -1,23 +1,22 @@
-using SunamoExceptions;
+﻿using SunamoExceptions;
 using System;
 using System.IO;
 using Xunit;
 
 namespace SunamoMime.Tests
 {
+    #region For easy copy
     public class SunamoMimeHelperTests
     {
         [Fact]
-        public void FileTypeTests()
+        public void FileTypeTest()
         {
-            
-
+            SunamoMimeHelper.Init();
             var f = @"d:\_Test\sunamo\win\Helpers\MImeHelper\GetMimeFromFile\Real";
             //application/octet-stream>
-            //Assert.Equal(string.Empty, SunamoMimeHelper.FileType(File.ReadAllBytes(f + AllExtensions.jpg)));
-            Assert.Equal(string.Empty, SunamoMimeHelper.FileType(File.ReadAllBytes( f + AllExtensions.webp)));
-            // 
-            
+            Assert.Equal("jpg", SunamoMimeHelper.FileType(TF.ReadAllBytes(f + AllExtensions.jpg).ToArray()));
+            Assert.Equal("webp", SunamoMimeHelper.FileType(TF.ReadAllBytes(f + AllExtensions.webp).ToArray()));
         }
-    }
+    } 
+    #endregion
 }

@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 
 using Xunit;
 using static Utf8Json.JsonSerializer;
@@ -31,7 +31,7 @@ namespace SunamoJson.Tests
             https://www.google.com/search?q=c%23+type+from+json etc
 
                         */
-            var input = "{\"price\":\"450000\", \"position\":\"0\", \"id\": \"18787720\", \"stitky\":\"servisní knížka, bluetooth, satelitní navigace\"}";
+            var input = "{\"price\":\"450000\", \"position\":\"0\", \"id\": \"18787720\", \"stitky\":\"servisnï¿½ knï¿½ka, bluetooth, satelitnï¿½ navigace\"}";
             var o = js.Deserialize<Root>(input);
         }
 
