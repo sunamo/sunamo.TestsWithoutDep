@@ -14,7 +14,7 @@ namespace SunamoIco.Tests
             ThisApp.Name = "SunamoIco.Tests";
             AppData.ci.CreateAppFoldersIfDontExists();
 
-            var input = @"D:\Documents\Visual Studio 2017\Projects\sunamo.cz\sunamo.cz\_\i\Apps\IconsOfApp\12.png";
+            var input = @"E:\Documents\Visual Studio 2017\Projects\sunamo.cz\sunamo.cz\_\i\Apps\IconsOfApp\12.png";
             var folder = AppData.ci.GetFolder(AppFolders.Output);
             Bitmap bmp = new Bitmap(input);
 
