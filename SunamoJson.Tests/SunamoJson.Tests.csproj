@@ -9,7 +9,7 @@
     <Compile Remove="Nunit\JsonParserTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Nunit\Dog.cs" />
+    <None Include="Data\Dog.cs" />
     <None Include="Nunit\JsonParserTests.cs" />
   </ItemGroup>
   <ItemGroup>

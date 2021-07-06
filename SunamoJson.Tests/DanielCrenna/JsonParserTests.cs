@@ -40,6 +40,24 @@
 //            Assert.AreEqual("Bob", person3.Name);
 //            Assert.AreEqual(21, person3.Age);
 //        }
+
+//[Fact]
+//public void JsonDanielCrennaTest()
+//{
+//    JavascriptSerialization js = new JavascriptSerialization(SerializationLibrary.JsonDanielCrenna);
+
+//    dynamic d = js.Deserialize<ExternalLoginResult>(TestData.flatJson);
+//    Assert.Equal(TestData.flatJsonSc, d.Sc);
+//    var d2 = new ExternalLoginResult { IdUser = 1, Sc = "au1skm2qhjbwhmu4z0qwcpiv" };
+
+//    var serialized = string.Empty;
+
+//    // Must use type parameter, otherwise return empty element
+//    serialized = js.Serialize<ExternalLoginResult>(d2);
+//     //serialized = JsonParser.Serialize(d2);
+//    Assert.Equal(TestData.flatJson, serialized);
+//}
+
 //    }
 //#endif
 //}
